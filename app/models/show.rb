@@ -3,6 +3,6 @@ class Show < ActiveRecord::Base
 
   def build_network(name)
 
-    self.network = Network.creatr(name: name)
+    self.network = Network.create(name: name)
   end
 end
