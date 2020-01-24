@@ -3,6 +3,6 @@ class Show < ActiveRecord::Base
 
   def build_network(call_letters:)
 
-    self.network = Network.create(call_letters:)
+    self.network = Network.create(call_letters: call_letters)
   end
 end
