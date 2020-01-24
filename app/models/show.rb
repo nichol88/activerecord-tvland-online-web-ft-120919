@@ -1,8 +1,8 @@
 class Show < ActiveRecord::Base
   has_many :characters
 
-  def build_network(name)
+  def build_network(letters)
 
-    self.network = Network.create(name: name)
+    self.network = Network.create(call_letters: name)
   end
 end
